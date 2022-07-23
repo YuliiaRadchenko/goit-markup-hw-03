@@ -25,13 +25,40 @@ body {
   line-height: 1.71;
 }
 
+/* reset */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Common styles start */
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red;
+  }
+
   .link {
     text-decoration: none;
   }
 
   .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 /* Common styles end */
 
@@ -49,11 +76,39 @@ body {
   color: var(--logo-top-color);
 }
 
+.nav-list,
+.contacts-list,
+.header-nav,
+.header-container {
+  display: flex;
+}
+
+.header-nav,
+.header-container {
+  align-items: center;
+}
+
+.nav-list {
+  margin-left: 93px;
+}
+
+.nav-list .nav-list-item+ .nav-list-item {
+  margin-left: 50px;
+}
+
 .nav-list .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contacts-list {
+  margin-left: auto;
 }
 
 .contacts-list .contacts-link {
@@ -61,6 +116,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contacts-list .contacts-list-item+ .contacts-list-item {
+  margin-left: 50px;
 }
 
 .nav-list .nav-link:hover,
