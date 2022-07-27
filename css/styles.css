@@ -143,6 +143,8 @@ img {
 .hero {
   background-color: var(--dark-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -182,10 +184,6 @@ img {
   background-color: var(--accent-button-color);
 }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 
 /* Sections common */
 .features-title,
@@ -279,7 +277,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 30px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -287,7 +285,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-list-item {
@@ -309,6 +307,8 @@ img {
 /* Footer */
 .footer {
   background-color: var(--dark-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-down {
@@ -330,11 +330,6 @@ img {
 .address-contacts .address-link:hover,
 .address-contacts .address-link:focus {
   color: var(--accent-text-color);
-}
-
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address {
